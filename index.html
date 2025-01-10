@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href="Style.css">
+  <script src="Slider.js"></script>
+  <title>My Website</title>
+</head>
+<body>
+<header>
+  <nav class="nav_links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<section id="profile">
+  <h1>Profile&#128512;</h1>
+  <div class="profile-container">
+    <img src="Dave.jpg" alt="Your Name" class="profile-picture">
+    <div class="profile-details">
+      <h3>Debby</h3>
+      <p>Hi, I'm Dave Tiongson. I'm passionate about delivering high-quality services in web development, game development, and software development.
+        <br>I thrive on innovation and bringing creative ideas to life!</p>
+      <ul>
+<!--        <li><strong>Skills:</strong> Java, PHP, JavaScript, C#</li>-->
+        <li><strong>Hobbies:</strong> Coding, Gaming, Design</li>
+        <li><strong>Location:</strong> Tagum, Davao del Norte, Philippines</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="home">
+  <h1>Welcome to my <span class="gradient-text">Website!</span> &#128526</h1>
+
+  <p>Your one-stop solution for all things awesome. &#128522</p>
+</section>
+
+
+
+<section id="about">
+  <h2>About Me &#128521</h2>
+  <p>I am dedicated to providing exceptional services to my clients.</p>
+  <h3>Recent Projects</h3>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="1.png" alt="Project 1">
+      <img src="2.png" alt="Project 2">
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+
+
+  <h2>Expertise Level:</h2>
+  <h3>Programming languages</h3>
+  <div class="progress-bar">
+    <label>Java</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 85%;"></div>
+    </div>
+    <label>PHP</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 20%;"></div>
+    </div>
+    <label>C#</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 15%;"></div>
+    </div>
+    <label>JavaScript</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 10%;"></div>
+    </div>
+    <label>HTML</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 40%;"></div>
+    </div>
+  </div>
+
+
+  <h3>Frameworks</h3>
+  <div class="progress-bar">
+    <label >Laravel</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 1%;"></div>
+    </div>
+
+    <label>Bootstrap</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 3%;"></div>
+    </div>
+
+    <label >Spring Boot</label>
+    <div class="progress">
+      <div class="progress-fill" style="width: 4%;"></div>
+    </div>
+  </div>
+
+
+  <h2>Game Engines</h2>
+    <div class="progress-bar">
+      <label >Godot</label>
+      <div class="progress">
+        <div class="progress-fill" style="width: 20%;"></div>
+      </div>
+
+      <label >G develop</label>
+      <div class="progress">
+        <div class="progress-fill" style="width: 50%;"></div>
+      </div>
+    </div>
+</section>
+
+
+
+<section id="services">
+  <h1>My Services &#129488</h1>
+  <ul>
+    <li>Web Development</li>
+    <li>Graphic Design</li>
+    <li>Desktop Application</li>
+    <li>Game Development</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h1 id="ContactText">Contact me! &#128222</h1>
+
+  <form action="mailto:davetiongson30@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>

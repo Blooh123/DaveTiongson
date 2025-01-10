@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,15 +46,33 @@
 <section id="about">
   <h2>About Me &#128521</h2>
   <p>I am dedicated to providing exceptional services to my clients.</p>
+
+
   <h3>Recent Projects</h3>
 
-  <div class="slider">
-    <div class="slides">
+  <!-- Updated card-based structure -->
+  <div class="project-cards">
+    <div class="card">
       <img src="1.png" alt="Project 1">
-      <img src="2.png" alt="Project 2">
+      <div class="card-content">
+        <h4>Flight Reservation System</h4>
+        <p>A desktop application developed in Java using the JavaFX framework. This project aims to provide a seamless and user-friendly interface for booking flights, managing reservations, and enhancing the overall customer experience through efficient design and functionality.</p>
+      </div>
     </div>
-    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="card">
+      <img src="2.png" alt="Project 2">
+      <div class="card-content">
+        <h4>Human Resource Management System</h4>
+        <p>A comprehensive software solution designed to streamline HR processes such as employee management, payroll, recruitment, and performance tracking. This system improves organizational efficiency and enhances workforce management.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Project3.png" alt="Project 3">
+      <div class="card-content">
+        <h4>Secure Library System</h4>
+        <p>A library management system focused on enhancing security and efficiency. This system ensures secure access to library resources, manages user authentication, and safeguards sensitive data while streamlining book borrowing and inventory management processes.</p>
+      </div>
+    </div>
   </div>
 
 
@@ -116,6 +134,7 @@
       </div>
     </div>
 </section>
+
 
 
 
